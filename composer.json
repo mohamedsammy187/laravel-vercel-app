@@ -70,6 +70,12 @@
         ],
         "pre-package-uninstall": [
             "Illuminate\\Foundation\\ComposerScripts::prePackageUninstall"
+        ],
+        "vercel-build": [
+            "composer run dev",
+            "mkdir -p /vercel/output/static",
+            "cp -a public/build/vercel/output/static/",
+            "php artisan migrate --force"
         ]
     },
     "extra": {
