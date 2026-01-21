@@ -1,0 +1,11 @@
+{
+    "mcpServers": {
+        "laravel-boost": {
+            "command": "D:\\new xamp\\php\\php.exe",
+            "args": [
+                "D:\\test\\laravel-vercel-app\\artisan",
+                "boost:mcp"
+            ]
+        }
+    }
+}
